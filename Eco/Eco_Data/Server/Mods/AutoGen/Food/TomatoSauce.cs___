@@ -1,0 +1,56 @@
+namespace Eco.Mods.TechTree
+{
+	using System.Collections.Generic;
+	using System.Linq;
+	using Eco.Gameplay.Components;
+	using Eco.Gameplay.DynamicValues;
+	using Eco.Gameplay.Items;
+	using Eco.Gameplay.Players;
+	using Eco.Gameplay.Skills;
+	using Eco.Gameplay.Systems.TextLinks;
+	using Eco.Mods.TechTree;
+	using Eco.Shared.Items;
+	using Eco.Shared.Localization;
+	using Eco.Shared.Serialization;
+	using Eco.Shared.Utils;
+	using Eco.Shared.View;
+
+	[Serialized]
+	[Weight(500)]
+	public partial class TomatoSauceItem :
+		FoodItem
+	{
+		public override string FriendlyName						{ get { return "Tomato Sauce"; } }
+		public override string Description						{ get { return "Basic tomato sauce."; } }
+
+		private static Nutrients nutrition = new Nutrients()	{ Carbs = 6, Fat = 4, Protein = 2, Vitamins = 6 };
+		public override float Calories							{ get { return 200.1f; } }
+		public override Nutrients Nutrition						{ get { return nutrition; } }
+	}
+
+	[RequiresSkill(typeof(HomeCookingSkill), 2)]
+	public partial class TomatoSauceRecipe : Recipe
+	{
+		public TomatoSauceRecipe()
+		{
+			this.Products = new CraftingElement[]
+			{
+				new CraftingElement<TomatoSauceItem>(),
+			};
+			this.Ingredients = new CraftingElement[]
+			{
+				new CraftingElement<TomatoItem>(typeof(HomeCookingEfficiencySkill), 30, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+				new CraftingElement<OilItem>(typeof(HomeCookingEfficiencySkill), 2, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+				new CraftingElement<TomatoItem>(typeof(HomeCookingEfficiencySkill), 30, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+				new CraftingElement<OilItem>(typeof(HomeCookingEfficiencySkill), 2, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+				new CraftingElement<TomatoItem>(typeof(HomeCookingEfficiencySkill), 30, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+				new CraftingElement<OilItem>(typeof(HomeCookingEfficiencySkill), 2, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+				new CraftingElement<TomatoItem>(typeof(HomeCookingEfficiencySkill), 30, HomeCookingEfficiencySkill.MultiplicativeStrategy),
+			};
+			this.CraftMinutes = CreateCraftTimeValue(typeof(TomatoSauceRecipe), Item.Get<TomatoSauceItem>().UILink(), 1.5f, typeof(HomeCookingSpeedSkill));
+			this.Initialize("Tomato Sauce", typeof(TomatoSauceRecipe));
+			CraftingComponent.AddRecipe(typeof(KitchenObject), this);
+			CraftingComponent.AddRecipe(typeof(AnvilObject), this);
+		}
+	}
+}
