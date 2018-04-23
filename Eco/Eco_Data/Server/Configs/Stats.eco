@@ -1,0 +1,7 @@
+{
+  "$id": "1",
+  "EnableStatWrites": false,
+  "EnableStatReads": false,
+  "WriteTimeoutMS": 1000,
+  "ReadTimeoutMS": 1000
+}
