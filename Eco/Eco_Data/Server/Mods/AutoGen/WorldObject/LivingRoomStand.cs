@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
     [RequireComponent(typeof(SolidGroundComponent))]
     public partial class LivingRoomStandObject : WorldObject
     {
-        public override string FriendlyName { get { return ""; } } 
+        public override string FriendlyName { get { return "LivingRoom Stand"; } } 
 
 
         protected override void Initialize()
@@ -74,7 +74,7 @@ namespace Eco.Mods.TechTree
         [TooltipChildren] public HousingValue HousingTooltip { get { return HousingVal; } }
         [TooltipChildren] public static HousingValue HousingVal { get { return new HousingValue() 
                                                 {
-                                                    Category = "LivingRoom",
+                                                    Category = "General",
                                                     Val = 1,
                                                     TypeForRoomLimit = "Stand",
                                                     DiminishingReturnPercent = 0.7f
