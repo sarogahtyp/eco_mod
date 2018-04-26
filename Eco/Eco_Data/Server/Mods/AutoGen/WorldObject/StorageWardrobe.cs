@@ -87,7 +87,7 @@ namespace Eco.Mods.TechTree
                                                 {
                                                     Category = "Bedroom",
                                                     Val = 1,
-                                                    TypeForRoomLimit = "Cabinets",
+                                                    TypeForRoomLimit = "Cabinet",
                                                     DiminishingReturnPercent = 0.75f
                                                 };}}       
     }
