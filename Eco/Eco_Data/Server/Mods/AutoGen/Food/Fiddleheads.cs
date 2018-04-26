@@ -23,7 +23,7 @@ namespace Eco.Mods.TechTree
     {
         public override string FriendlyName                     { get { return "Fiddleheads"; } }
         public override string FriendlyNamePlural               { get { return "Fiddleheads"; } } 
-        public override string Description                      { get { return "Acollection of the furled fronds of young ferns; a unique addition to a meal."; } }
+        public override string Description                      { get { return "A collection of the furled fronds of young ferns; an unique addition to a meal."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 3, Fat = 0, Protein = 1, Vitamins = 3};
         public override float Calories                          { get { return 8; } }
