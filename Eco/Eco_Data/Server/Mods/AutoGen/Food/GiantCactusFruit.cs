@@ -16,7 +16,8 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.View;
     
     [Serialized]
-    [Weight(10)]                                          
+    [MaxStackSize(500)]
+    [Weight(10)]
     [Yield(typeof(GiantCactusFruitItem), typeof(DesertDrifterSkill), new float[] {1f, 1.2f, 1.4f, 1.6f, 1.8f, 2f})]      
     public partial class GiantCactusFruitItem :
         FoodItem            
@@ -25,7 +26,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "A bulbous fruit that used to top Saguaro cacti."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 2, Fat = 3, Protein = 0, Vitamins = 5};
-        public override float Calories                          { get { return 300; } }
+        public override float Calories                          { get { return 30; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 

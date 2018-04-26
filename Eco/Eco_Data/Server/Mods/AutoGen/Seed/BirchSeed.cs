@@ -18,6 +18,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [Yield(typeof(BirchSeedItem), typeof(ForestpilgrimSkill), new float[] { 1f, 1.2f, 1.4f, 1.6f, 1.8f, 2f })]  
+    [MaxStackSize(500)]
     [Weight(10)]  
     public partial class BirchSeedItem : SeedItem
     {

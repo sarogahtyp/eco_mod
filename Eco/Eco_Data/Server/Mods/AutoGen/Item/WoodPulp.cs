@@ -21,7 +21,8 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
-    [Weight(10)]      
+	[MaxStackSize(500)]
+	[Weight(10)]      
     [Currency]              
     public partial class WoodPulpItem :
     Item                                     

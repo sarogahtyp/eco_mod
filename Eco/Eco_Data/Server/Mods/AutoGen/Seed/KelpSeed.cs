@@ -17,7 +17,8 @@ namespace Eco.Mods.TechTree
     using System.ComponentModel;
 
     [Serialized]
-    [Weight(10)]  
+	[MaxStackSize(500)]
+	[Weight(10)]  
     public partial class KelpSeedItem : SeedItem
     {
         static KelpSeedItem() { }

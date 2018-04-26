@@ -16,6 +16,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.View;
     
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(10)]                                          
     [Yield(typeof(BeetItem), typeof(GrasslandGathererSkill), new float[] {1f, 1.2f, 1.4f, 1.6f, 1.8f, 2f})]      
     public partial class BeetItem :
