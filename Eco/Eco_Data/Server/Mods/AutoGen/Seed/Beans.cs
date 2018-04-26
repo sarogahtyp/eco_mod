@@ -29,7 +29,7 @@ namespace Eco.Mods.TechTree
         public override string Description  { get { return "A good source of protein."; } }
         public override string SpeciesName  { get { return "Beans"; } }
 
-        public override float Calories { get { return 120; } }
+        public override float Calories { get { return 12; } }
         public override Nutrients Nutrition { get { return nutrition; } }
     }
 

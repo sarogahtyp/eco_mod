@@ -26,7 +26,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "A handfull of small wild berries. I'm your huckleberry."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 2, Fat = 0, Protein = 0, Vitamins = 6};
-        public override float Calories                          { get { return 80; } }
+        public override float Calories                          { get { return 8; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 

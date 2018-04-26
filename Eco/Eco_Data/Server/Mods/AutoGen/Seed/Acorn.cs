@@ -18,7 +18,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [Yield(typeof(AcornItem), typeof(ForestpilgrimSkill), new float[] { 1f, 1.2f, 1.4f, 1.6f, 1.8f, 2f })]  
-    [Weight(10)]  
+    [Weight(10)]
     public partial class AcornItem : SeedItem
     {
         static AcornItem() { }

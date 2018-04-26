@@ -25,7 +25,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "A succulent fruit coated in a rather terrifying array of spines."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 2, Fat = 1, Protein = 1, Vitamins = 3};
-        public override float Calories                          { get { return 190; } }
+        public override float Calories                          { get { return 19; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 

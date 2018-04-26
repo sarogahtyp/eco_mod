@@ -25,7 +25,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "Edible mushrooms that are quite tasty."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 3, Fat = 1, Protein = 3, Vitamins = 1};
-        public override float Calories                          { get { return 200; } }
+        public override float Calories                          { get { return 20; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 

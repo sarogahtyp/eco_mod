@@ -26,7 +26,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "A warmly colored kernel studded vegetable."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 5, Fat = 0, Protein = 2, Vitamins = 1};
-        public override float Calories                          { get { return 230; } }
+        public override float Calories                          { get { return 23; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 

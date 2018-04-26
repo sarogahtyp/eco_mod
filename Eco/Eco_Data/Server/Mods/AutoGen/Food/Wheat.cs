@@ -26,7 +26,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "A common grain that is significantly more useful processed."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 6, Fat = 0, Protein = 2, Vitamins = 0};
-        public override float Calories                          { get { return 130; } }
+        public override float Calories                          { get { return 13; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 

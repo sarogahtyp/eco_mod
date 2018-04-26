@@ -29,7 +29,7 @@ namespace Eco.Mods.TechTree
         public override string Description  { get { return "Plant to grow a camas plant."; } }
         public override string SpeciesName  { get { return "Camas"; } }
 
-        public override float Calories { get { return 120; } }
+        public override float Calories { get { return 12; } }
         public override Nutrients Nutrition { get { return nutrition; } }
     }
 

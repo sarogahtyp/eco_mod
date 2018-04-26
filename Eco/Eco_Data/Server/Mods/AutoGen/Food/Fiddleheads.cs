@@ -26,7 +26,7 @@ namespace Eco.Mods.TechTree
         public override string Description                      { get { return "Acollection of the furled fronds of young ferns; a unique addition to a meal."; } }
 
         private static Nutrients nutrition = new Nutrients()    { Carbs = 3, Fat = 0, Protein = 1, Vitamins = 3};
-        public override float Calories                          { get { return 80; } }
+        public override float Calories                          { get { return 8; } }
         public override Nutrients Nutrition                     { get { return nutrition; } }
     }
 
