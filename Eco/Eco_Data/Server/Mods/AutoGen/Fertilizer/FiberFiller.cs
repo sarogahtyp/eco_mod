@@ -37,6 +37,7 @@ namespace Eco.Mods.TechTree
     }
     
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(500)]  
     [Category("Tool")]
     public partial class FiberFillerItem : FertilizerItem
