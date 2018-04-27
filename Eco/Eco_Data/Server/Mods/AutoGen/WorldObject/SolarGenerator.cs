@@ -33,9 +33,9 @@ namespace Eco.Mods.TechTree
     [Serialized]    
     [RequireComponent(typeof(OnOffComponent))]                   
     [RequireComponent(typeof(PropertyAuthComponent))]
-    [RequireComponent(typeof(MinimapComponent))]                
-    [RequireComponent(typeof(LinkComponent))]                   
-    [RequireComponent(typeof(PowerGridComponent))]              
+    [RequireComponent(typeof(MinimapComponent))]
+//	[RequireComponent(typeof(LinkComponent))]			//	not necessary, doesn't need fuel
+	[RequireComponent(typeof(PowerGridComponent))]              
     [RequireComponent(typeof(PowerGeneratorComponent))]         
     [RequireComponent(typeof(HousingComponent))]                  
     [RequireComponent(typeof(SolidGroundComponent))]            
