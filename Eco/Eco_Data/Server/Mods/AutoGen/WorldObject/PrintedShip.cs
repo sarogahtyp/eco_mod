@@ -72,7 +72,7 @@ namespace Eco.Mods.TechTree
                                                 {
                                                     Category = "General",
                                                     Val = 2,
-                                                    TypeForRoomLimit = "Ornament",
+                                                    TypeForRoomLimit = "Decoration",
                                                     DiminishingReturnPercent = 0.7f
                                                 };}}       
     }
