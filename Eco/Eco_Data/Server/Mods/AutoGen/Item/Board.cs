@@ -40,6 +40,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(500)]      
     [Fuel(2000)]          
     [Currency]              

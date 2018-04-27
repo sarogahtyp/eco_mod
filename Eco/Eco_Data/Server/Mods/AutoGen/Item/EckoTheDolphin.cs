@@ -21,6 +21,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(0)]      
     [Category("Hidden")]    
     [Currency]              

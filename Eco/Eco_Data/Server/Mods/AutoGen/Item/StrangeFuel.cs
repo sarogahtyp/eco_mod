@@ -21,6 +21,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(100)]      
     [Fuel(10000000)]          
     [Category("Hidden")]    

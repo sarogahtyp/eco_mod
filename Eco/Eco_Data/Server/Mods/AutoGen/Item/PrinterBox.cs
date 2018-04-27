@@ -39,7 +39,8 @@ namespace Eco.Mods.TechTree
         }
     }
 
-    [Serialized]    
+    [Serialized]
+    [MaxStackSize(500)]
     [Weight(4000)]      
     [Currency]
     public partial class PrinterBoxItem :

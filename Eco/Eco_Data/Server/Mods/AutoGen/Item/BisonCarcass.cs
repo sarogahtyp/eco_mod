@@ -21,6 +21,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(4000)]      
     public partial class BisonCarcassItem :
     Item                                     

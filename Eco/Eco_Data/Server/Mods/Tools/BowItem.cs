@@ -21,6 +21,7 @@ using System.Runtime.CompilerServices;
 using Eco.Shared.Localization;
 
 [Serialized]
+[Weight(500)]	//	added
 [Category("Tools")]
 [RepairRequiresSkill(typeof(BasicCraftingSkill), 0)]
 public class BowItem : ToolItem

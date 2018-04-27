@@ -21,6 +21,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(0)]      
     [Currency]              
     public partial class ShovelItem :

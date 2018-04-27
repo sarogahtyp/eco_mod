@@ -42,6 +42,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(200)]      
     [Currency]              
     public partial class CopperWiringItem :

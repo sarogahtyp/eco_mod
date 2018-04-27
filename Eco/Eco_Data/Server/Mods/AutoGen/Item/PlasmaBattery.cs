@@ -42,7 +42,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
-    [MaxStackSize(20)]
+    [MaxStackSize(500)]
     [Weight(2000)]
     public partial class PlasmaBatteryItem :
     Item                                     

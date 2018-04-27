@@ -42,6 +42,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(500)]                
     [Currency]              
     public partial class PhosphorusItem :

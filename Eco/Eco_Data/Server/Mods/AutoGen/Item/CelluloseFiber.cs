@@ -41,6 +41,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(100)]      
     [Currency]              
     public partial class CelluloseFiberItem :

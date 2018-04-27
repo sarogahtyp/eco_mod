@@ -40,7 +40,7 @@ namespace Eco.Mods.TechTree
     }
 
     [Serialized]
-    [MaxStackSize(20)]      
+	[MaxStackSize(500)]	//	[MaxStackSize(20)]      
     [Weight(10000)]  
     [Currency]   
     public partial class CeramicPolishItem :

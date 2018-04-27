@@ -48,6 +48,8 @@ public abstract class BaseRampObject : WorldObject, INetObjectPriority
 }
 
 [Serialized]
+[MaxStackSize(500)]
+[Weight(6000)]  //	added Weight; should be 120kg: dirt weights 30kg: 2x4/2 but that would be impracticable; therefore only 5% weight for now; not carrying unlimited ramps anymore
 public class DirtRampObject : BaseRampObject
 {
     public override string FriendlyName { get { return "Dirt Ramp"; } }
@@ -63,6 +65,8 @@ public class DirtRampObject : BaseRampObject
 }
 
 [Serialized]
+[MaxStackSize(500)]
+[Weight(6000)]  //	added Weight; should be 120kg: stone road weights 30kg: 2x4/2 but that would be impracticable; therefore only 5% weight for now; not carrying unlimited ramps anymore
 [ItemGroup("Road Items")]
 public class DirtRampItem : WorldObjectItem<DirtRampObject>
 {
@@ -86,6 +90,8 @@ public class StoneRampObject : BaseRampObject
 }
 
 [Serialized]
+[MaxStackSize(500)]
+[Weight(6000)]	//	added Weight; should be 120kg: stone road weights 30kg: 2x4/2 but that would be impracticable; therefore only 5% weight for now; not carrying unlimited ramps anymore
 [ItemGroup("Road Items")]
 public class StoneRampItem : WorldObjectItem<StoneRampObject>
 {
@@ -108,6 +114,8 @@ public class AsphaltRampObject : BaseRampObject
 }
 
 [Serialized]
+[MaxStackSize(500)]
+[Weight(4000)]	//	added Weight; should be 80kg: asphalt road weights 10kg: 4x4/2 but that would be impracticable; therefore only 5% weight for now; not carrying unlimited ramps anymore
 [ItemGroup("Road Items")]
 public class AsphaltRampItem : WorldObjectItem<AsphaltRampObject>
 {

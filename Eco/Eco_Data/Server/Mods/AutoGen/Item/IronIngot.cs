@@ -41,6 +41,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(4000)]      
     [Currency]              
     public partial class IronIngotItem :

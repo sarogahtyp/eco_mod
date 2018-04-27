@@ -40,6 +40,7 @@ namespace Eco.Mods.TechTree
 
 
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(10000)]      
     [Currency]              
     public partial class ConcreteItem :
