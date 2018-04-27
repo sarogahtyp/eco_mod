@@ -16,6 +16,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.View;
     
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(500)]                                          
     public partial class BakedMeatItem :
         FoodItem            

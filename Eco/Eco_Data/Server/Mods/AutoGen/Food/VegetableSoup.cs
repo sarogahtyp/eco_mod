@@ -16,6 +16,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.View;
     
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(900)]                                          
     public partial class VegetableSoupItem :
         FoodItem            

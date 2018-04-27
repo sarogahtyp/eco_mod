@@ -16,6 +16,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.View;
     
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(300)]                                          
     public partial class CamasBulbBakeItem :
         FoodItem            

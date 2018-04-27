@@ -16,6 +16,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.View;
     
     [Serialized]
+    [MaxStackSize(500)]
     [Weight(20)]                                          
     [Fuel(2000)]                                              
     public partial class TallowItem :
