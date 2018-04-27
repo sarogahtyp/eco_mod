@@ -55,9 +55,7 @@ namespace Eco.Mods.TechTree
             this.GetComponent<PowerConsumptionComponent>().Initialize(500);
             this.GetComponent<PowerGridComponent>().Initialize(10, new ElectricPower());
             this.GetComponent<HousingComponent>().Set(DPrinterItem.HousingVal);
-            this.GetComponent<LinkComponent>().Initialize(10);
-
-
+//			this.GetComponent<LinkComponent>().Initialize(10);
         }
 
         public override void Destroy()
